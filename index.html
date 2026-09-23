@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+
+                <input type="text" placeholder="Enter your location" class="input-box">
+                <button class="search-btn">
+
+                    <i class="fa-solid fa-magnifying-glass" id="searchBtn"></i>
+
+
+                </button>
+            </div>
+
+
+        </div>
+
+        <div class="location-not-found">
+            <h1>Sorry, Location not found!!!</h1>
+            <img src="/assets/404.png" alt="404 Error">
+        </div>
+
+        <div class="Weather-body">
+            <img src="/assets/cloud.png" alt="Weather Image" class="weather-img">
+
+            <div class="weather-box">
+                <p class="temperature">0<sup>°C</sup></p>
+                <p class="description">light rain</p>
+            </div>
+
+            <div class="weather-details">
+                <!-- Wind will now appear on the left -->
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span>12Km/H</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+
+                <!-- Humidity will now appear on the right -->
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span>45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+
+    <script src="https://kit.fontawesome.com/a2f6ba713b.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
